@@ -1,4 +1,14 @@
+"""
+Quiz Instructions
+v1 - first version (longer instruction message)
+v2 - improved version of the component (shorter, refined version of the instructions)
+
+Author - Yuri Dilks
+CC YD 2022
+"""
+
 # Functions go here ---------------------------------
+
 
 # Yes / No Checker function
 def yes_no_checker(question):
