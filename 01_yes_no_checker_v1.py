@@ -9,6 +9,7 @@ CC YD 2022
 
 
 # Functions go here ---------------------------------
+# creating a yes / no checker function to check users answers when answer the 'instruction' question
 def yes_no_checker(question):
     valid = False
     while not valid:
