@@ -1,5 +1,13 @@
+"""
+Quiz Rounds
+v1 - first version (no function)
+v2 - turned into a function
+
+Author - Yuri Dilks
+CC YD 2022
+"""
 # Functions go here ------------------------------
-# Version 2 - turned into function
+
 
 def number_check(rounds_question, too_low, too_high):
     error_message = "Please enter a whole number between 1 and 10"
