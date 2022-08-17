@@ -9,6 +9,7 @@ CC YD 2022
 # Functions go here ------------------------------
 
 
+# number checker function to check if the user has enters a valid answer between 1 and 10
 def number_check(rounds_question, too_low, too_high):
     error_message = "Please enter a whole number between 1 and 10"
 
