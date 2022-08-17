@@ -1,3 +1,13 @@
+"""
+Yes No Checker
+v1 - trialling ideas
+v2 - improved version of the function
+
+Author - Yuri Dilks
+CC YD 2022
+"""
+
+
 # Functions go here ---------------------------------
 def yes_no_checker(question):
     valid = False
