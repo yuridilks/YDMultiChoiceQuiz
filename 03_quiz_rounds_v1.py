@@ -9,7 +9,7 @@ CC YD 2022
 # Functions go here ---------------------------------
 
 # Main Routine goes here ----------------------------
-
+# creating a error message so the program doesn't crash when user enters invalid answer (example: 'ten' instead of '10')
 error_message = "Please enter a whole number between 1 and 10"
 
 valid = False
