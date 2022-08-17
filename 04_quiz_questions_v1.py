@@ -3,9 +3,13 @@
 
 # Main Routine goes here -------------------------------
 # Question One
+# asking the user the question
 user_answer = input("What is the capital city of New Zealand? ")
+# creating a 'correct' statement if users answer correctly
 if user_answer == "Wellington":
     print("Well done, that is correct!")
+
+# printing a statement if users enter invalid or incorrect answer
 else:
     print("Sorry, that is incorrect. The answer is 'Wellington', not {}.".format(user_answer))
 
