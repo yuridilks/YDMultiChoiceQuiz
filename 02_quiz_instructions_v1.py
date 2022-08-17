@@ -38,6 +38,7 @@ def quiz_instruction():
 
 
 # Main Routine goes here --------------------------
+# asking the user if they have played the quiz before
 played_quiz_before = yes_no_checker("Have you played this quiz before? ")
 
 if played_quiz_before == "no":
