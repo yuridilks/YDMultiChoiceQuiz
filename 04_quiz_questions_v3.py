@@ -77,4 +77,4 @@ for number, (nz_question, answer_choices) in enumerate(QUIZ_QUESTIONS.items(), s
 
     # creating a print statement if the users answer incorrectly or enter an invalid answer
     else:
-        print(f"The answer is {correct_answer!r}, not {answer!r}")
+        print(f"The answer is {correct_answer!r}, not {answer_label!r}")
