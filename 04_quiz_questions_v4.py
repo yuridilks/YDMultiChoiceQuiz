@@ -1,3 +1,13 @@
+"""
+Quiz Questions
+v1 - trial (no functions)
+v2 - turned questions into function and list
+v3 - improved the component
+v4 - finalised this component
+
+Author - Yuri Dilks
+CC YD 2022
+"""
 # importing 'ascii_lowercase' to allow my multi choice to be 'a', 'b', 'c'
 from string import ascii_lowercase
 
