@@ -1,3 +1,13 @@
+"""
+Quiz Questions
+v1 - trial (no functions)
+v2 - turned questions into function and list
+v3 - improved the component
+v4 - finalised this component
+
+Author - Yuri Dilks
+CC YD 2022
+"""
 # Functions go here ------------------------------------
 
 
