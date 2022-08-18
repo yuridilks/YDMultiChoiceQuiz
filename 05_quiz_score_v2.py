@@ -1,3 +1,11 @@
+"""
+Quiz Score
+v1 - created a function and score
+v2 - another function for 'final score'
+
+Author - Yuri Dilks
+CC YD 2022
+"""
 # importing 'ascii_lowercase' to allow my multi choice to be 'a', 'b', 'c'
 from string import ascii_lowercase
 
