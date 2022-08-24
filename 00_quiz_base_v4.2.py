@@ -122,12 +122,12 @@ for number, (nz_question, answer_choices) in enumerate(QUIZ_QUESTIONS.items(), s
         correct_message = "Well done, that is CORRECT!"
         correct_decoration = "-"
         quiz_statements(correct_message, correct_decoration)
-        print(f"Your Current Score: {user_score} out of {number}")
 
     # creating a print statement if the users answer incorrectly
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}")
-        print(f"Your Current Score: {user_score} out of {number}")
+
+    print(f"Your Current Score: {user_score} out of {number}")
 
 # show the user's final score
 final_statement = f"FINAL SCORE: {user_score} out of 10"
