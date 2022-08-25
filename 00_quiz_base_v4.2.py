@@ -3,7 +3,7 @@ Base Component for NZ General Knowledge Quiz
 v0 - skeleton setup
 v1 - adding component one
 v2 - adding component two
-v3 - adding component four (adding comp. three last)
+v3 - adding component four (not adding component three)
 v4 - adding component five
 
 Author - Yuri Dilks
@@ -24,12 +24,10 @@ def yes_no_checker(question):
         if user_response == "y" or user_response == "yes":
             user_response = "yes"
             return user_response
-
         # if users haven't played quiz before, show instructions
         elif user_response == "n" or user_response == "no":
             user_response = "no"
             return user_response
-
         # printing a statement if user answers invalid input
         else:
             print("Please enter a 'yes' or 'no' answer")
@@ -40,13 +38,28 @@ def quiz_statements(statement, decoration):
     sides = decoration * 2
     statement = "{} {} {}".format(sides, statement, sides)
     decoration_border = decoration * len(statement)
-
 # printing the 'decoration' around the statement
     print(decoration_border)
     print(statement)
     print(decoration_border)
 
     return ""
+
+
+# created a Final Message function to print message to users at the end of the quiz
+def final_message():
+    # printing message to users if their score is in between 0 and 5
+    if 0 < user_score <= 5:
+        print("Good try, better luck next time!")
+        return ""
+    # printing message to users if their score is in between 6 and 8
+    elif 6 < user_score <= 8:
+        print("Great job!")
+        return ""
+    # printing message to users if their score is 9 or 10
+    elif 9 < user_score <= 10:
+        print("Amazing effort, well done!")
+        return ""
 
 
 # Main Routine goes here ----------------------------------------------------------------------------------------------
@@ -109,7 +122,6 @@ for number, (nz_question, answer_choices) in enumerate(QUIZ_QUESTIONS.items(), s
     labeled_option = dict(zip(ascii_lowercase, sorted(answer_choices)))
     for label, option in labeled_option.items():
         print(f"  {label}) {option}")
-
     # creating an 'error' message if users enter invalid answer
     while (answer_label := input("\nYour Answer: ")) not in labeled_option:
         print(f"Please answer 'a', 'b' or 'c' as your answer")
@@ -120,16 +132,15 @@ for number, (nz_question, answer_choices) in enumerate(QUIZ_QUESTIONS.items(), s
         user_score += 1
         # adding in the decoration statement to 'correct' answer
         correct_message = "Well done, that is CORRECT!"
-        correct_decoration = "-"
+        correct_decoration = "!"
         quiz_statements(correct_message, correct_decoration)
-
     # creating a print statement if the users answer incorrectly
     else:
         print(f"The answer is {correct_answer!r}, not {answer!r}")
 
-    print(f"Your Current Score: {user_score} out of {number}")
+    print(f"Your Current Score: {user_score} out of {number}\n")
 
-# show the user's final score
-final_statement = f"FINAL SCORE: {user_score} out of 10"
+# show the user's final score and called the final message function
+final_statement = f"FINAL SCORE: {user_score} out of 10. {final_message()}"
 final_decoration = "*"
 quiz_statements(final_statement, final_decoration)
